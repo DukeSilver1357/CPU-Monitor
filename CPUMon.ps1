@@ -9,8 +9,8 @@ do {
 } while ($t -lt 30)
 
 if ($cpuhistory -ge 24) {
-    Write-Host($cpuhistory * 10 / 60)
+    Write-Host("True")
 }
 else {
-    Write-Host("0")
+    Write-Host("False")
 }
