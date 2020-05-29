@@ -1,7 +1,7 @@
 $cpuhistory=0
 $t=0
 do {
-    if ($(get-counter "\Processor(_Total)\% Idle Time").countersamples.cookedvalue -lt 95.0){
+    if ($(get-counter "\Processor(_Total)\% Idle Time").countersamples.cookedvalue -lt 25){
       $cpuhistory++
 }
     $t++
